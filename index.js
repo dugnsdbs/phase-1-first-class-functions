@@ -3,9 +3,10 @@ function receivesAFunction(index){
 }
 let spy = function() {return 1+1};
 
-receivesAFunction(spy);
+function returnsANamedFunction(){
+  return returnsANamedFunction;
+};
 
-
-(function returnsANamedFunction(named){
-  return named;
-})();
+function returnsAnAnonymousFunction(){
+  return function(){return returnsAnAnonymousFunction};
+}
